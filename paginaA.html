@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal - Luis Pineda</title>
+    
+    
+     <!-- 1. CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+
+    <header class="encabezado">
+            <!-- BARRA DE NAVEGACIÓN (NAVBAR DE BOOTSTRAP) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Avatar y Brand agrupados a la izquierda -->
+            <div class="d-flex align-items-center me-3">
+                <!-- Avatar estilizado con Bootstrap 5 -->
+                <span
+                    class="rounded-circle bg-light text-dark fw-bold d-inline-flex align-items-center justify-content-center me-2"
+                    style="width: 40px; height: 40px; font-size: 14px;">
+                    DRA
+                </span>
+                <a class="navbar-brand mb-0 h1" href="paginaD.html">DelReal y Asociados</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio (C)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginaE.html">Acerca de (E)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginaF.html">Contáctanos (F)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <h1>Página personal</h1>
+        <h2>Luis Eduardo Pineda Teodosio</h2>
+        <p>Soy un estudiante de 5° semestre de la carrera de Ing. en Sistemas Computacionales en el Instituto Tecnológico de Zacatepec, actualmente estoy cursando 6 materias enfocadas en su totalidad a la carrera.</p>
+        
+        <div class="imagenes-header">
+            <img src="images/UCL.png" width="100" height="100" alt="UCL" title="UCL">
+            <img src="images/formula1.png" width="180" height="100" alt="F1" title="F1">
+        </div>
+    </header>
+
+    <!-- ÁREA PRINCIPAL CON GRID -->
+    <main class="contenedor-grid">
+        
+        <!-- Tarjeta 1: Mis Gustos -->
+        <section class="tarjeta">
+            <h2>Mis gustos:</h2>
+
+            <details>
+                <summary>Deporte de preferencia:</summary>
+                <p>Soy muy fanático del fútbol jugarlo más que verlo aún así demás deportes como la Fórmula 1 y Box son los que con frecuencia veo.</p>
+            </details>
+
+            <details>
+                <summary>Aprender nuevos temas:</summary>
+                <p>Disfruto de aprender nuevas cosas relacionadas con la ingeniería.</p>
+                <img src="images/build.png" width="180" height="100" alt="Edificio" title="Edificio">
+            </details>
+
+            <details>
+                <summary>Familia:</summary>
+                <p>Actualmente vivo con mi mamá, papá y mi hermana.</p>
+            </details>
+        </section>
+
+        <!-- Tarjeta 2: Objetivos y Expectativas -->
+        <section class="tarjeta">
+            <h2>Expectativas y Objetivos</h2>
+
+            <details>
+                <summary>¿Programar páginas Web?</summary>
+                <p>En lo personal no es mi meta o un objetivo primordial el desarrollo frontend ya que me inclino más hacia la lógica de los negocios, sin embargo, considero que es una habilidad esencial...</p>
+            </details>
+
+            <details>
+                <summary>¿Qué espero aprender de esta materia?</summary>
+                <p>Antes de terminar el ciclo estoy comprometido a aprender los fundamentos clave de HTML y CSS...</p>
+            </details>
+        </section>
+
+        <!-- Tarjeta 3: Páginas Preferidas -->
+        <section class="tarjeta">
+            <h2>Páginas web preferidas</h2>
+            <ul>
+                <li>
+                    <a href="https://www.formula1.com" target="_blank" rel="noopener noreferrer">Fórmula 1 Oficial</a>
+                </li>
+                <li>
+                    <a href="https://www.uefa.com/uefachampionsleague/" target="_blank" rel="noopener noreferrer">UEFA Champions League</a>
+                </li>
+                <li>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <nav>
+        
+        <a href="paginaB.html">Rutas Tecnológicas</a>
+    </nav>
+
+    <footer>
+        <p>Copyright &copy; Pie de página 2026</p>
+        <a href="mailto:luiseduardo_pineda@outlook.com">Correo</a> | 
+        <a href="tel:+527774417167">Teléfono</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Estilos generales (Base para todas las páginas) */
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* IMPLEMENTACIÓN DE CSS GRID (Requisito obligatorio) */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Pie de página separado */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+.img-carrusel {
+    width: 100%;           /* Ocupa todo el ancho del contenedor */
+    max-width: 1280px;     /* Limita el ancho máximo a 1200px si lo deseas */
+    height: 960px;         /* Ajusta esta altura (en píxeles) según prefieras */
+    object-fit: cover;     /* Evita que la imagen se deforme, rellenando el espacio de forma proporcional */
+    margin: 0 auto;        /* Centra la imagen si el contenedor es más ancho */
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+.form-registro{
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}
+h1{ text-align:center; margin-bottom:15px; }
+
+fieldset{
+  border: 2px solid #c08bfd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #fbf8ff;
+}
+legend{
+  font-weight: bold;
+  padding: 0 8px;
+  color: #6d28d9;
+}
+
+.fila{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.fila input{ width: 140px; }
+
+input[type="text"], input[type="email"], input[type="number"], textarea{
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+textarea{ width: 100%; resize: vertical; }
+
+.opciones{
+  display: flex;
+  gap: 15px;
+  margin: 5px 0 10px 0;
+}
+
+.botones button{
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+button[type="submit"]{ background:#b2ee94; }
+button[type="reset"]{ background:#ff8983; color:white; }
+
+button:hover{ opacity:0.8; }
+
+.redes-sociales a {
+  font-size: 48px; /* aquí controlas el tamaño */
+  margin-right: 15px; /* separación entre ellos */
+  transition: transform 0.2s;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2); /* se agrandan al pasar el mouse */
+}

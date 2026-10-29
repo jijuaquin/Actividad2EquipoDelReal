@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina Personal</title>
+    <!-- 1. CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Avatar y Brand agrupados a la izquierda -->
+                <div class="d-flex align-items-center me-3">
+                    <!-- Avatar estilizado con Bootstrap 5 -->
+                    <span
+                        class="rounded-circle bg-light text-dark fw-bold d-inline-flex align-items-center justify-content-center me-2"
+                        style="width: 40px; height: 40px; font-size: 14px;">
+                        DRA
+                    </span>
+                    <a class="navbar-brand mb-0 h1" href="paginaD.html">DelReal y Asociados</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio (C)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginaE.html">Acerca de (E)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginaF.html">Contáctanos (F)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <h1>Mi pagina personal</h1>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container-fluid">
+            <section class="tarjeta">
+                <h3>Datos personales</h3>
+                <p class="lead">Mi nombre es Joaquin Franco Delgado, soy un estudiante del Tecnm campus Zacatepec,
+                    actualmente tengo 20 años, naci el 26 de julio del 2006, vivo con mis padres en Temilpa Viejo,
+                    Tlaltizapan, Morelos.</p>
+            </section>
+            <section class="tarjeta">
+                <h4>Pasatiempos</h4>
+                <p class="lead">En mis ratos libres me gusta jugar videojuegos, pasar rato con mi novia, ir al gym,
+                    jugar con mis mascotas, escuchar musica, ver reels, videos de youtube, ir a nadar
+                </p>
+            </section>
+            <section class="tarjeta">
+                <h4>Paginas preferidas</h4>
+                <p class="lead">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCtxD0x6AuNNqdXO9Wp5GHew">Canal de CR7</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw">Musica de Eminem</a></li>
+                    <li><a href="paginaBJoaquin.html">Mi pagina libre (B)</a></li>
+                </ul>
+                </p>
+            </section>
+            <section class="tarjeta">
+                <h4>Objetivos y expectativas de la materia</h4>
+                <p class="lead">
+                    Siendo sincero, me parece interesante lo que es hacer las paginas web pero no es a lo que me
+                    gustaria dedicarme,
+                    con el avance de la IA cada vez es mas facil hacer paginas web bastante bonitas con lo cual
+                    preferiria
+                    especializarme en otra cosa.
+                    Eso no quita que me parece necesario tener el conocimiento por eso me gustaria aprender a hacer mis
+                    paginas e incluirlas
+                    en proximos proyectos.
+                </p>
+            </section>
+            <h4>Redes sociales</h4>
+            <div class="redes-sociales">
+                <a href="https://instagram.com/jijuaqin" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/joaquin.franco.5439" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://t.me/jijuaqin" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+
+            <style>
+                .redes-sociales a i {
+                    font-size: 45px !important;
+                    /* CAMBIA AQUÍ EL TAMAÑO, pon 60px si los quieres más grandes */
+                    margin-right: 18px;
+                    vertical-align: middle;
+                }
+
+                .redes-sociales a {
+                    text-decoration: none;
+                    color: #229ED9;
+                    /* si quieres que todos sean azules, si no bórralo */
+                }
+
+                .redes-sociales a:hover i {
+                    transform: scale(1.15);
+                }
+            </style>
+
+            <!-- CARRUSEL DE BOOTSTRAP (MÍNIMO 5 IMÁGENES) -->
+            <section class="container my-5">
+                <div id="carruselEquipo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicadores (puntos de navegación) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- Imágenes del carrusel -->
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="images/yo.jpeg" class="d-block w-100 img-carrusel" alt="Integrante 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Trabajo en Equipo</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/joss_y_yo.jpeg" class="d-block w-100 img-carrusel" alt="Integrante 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/perrin.jpeg" class="d-block w-100 img-carrusel" alt="Integrante 3">
+                        </div>
+                    </div>
+
+                    <!-- Controles de Flechas (Anterior / Siguiente) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEquipo"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselEquipo"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </section>
+    </main>
+    <div class="container-fluid">
+        <footer>
+            <p>Franco Delgado Joaquin 24090878</p>
+            <p>Programacion Web XB</p>
+            <p>Zacatepec, Morelos 12/10/26</p>
+        </footer>
+    </div>
+</body>
+
+</html>
